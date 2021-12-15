@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<p>Formulario</p>
+		<form action="recibir.html" method="post">
+			<p>
+				Tipo documento
+				<br>
+				<select name="documento" id="tdocum">
+					<option value="ced">Cédula</option>
+					<option value="dni">DNI</option>
+				</select>
+			</p>
+			<p>
+				Nombres:
+				<br>
+				<input type="text" name="nombre">
+			</p>
+			<p>
+				Apellidos:
+				<br>
+				<input type="text" name="ape">
+			</p>
+			<p>
+				Genero:
+				<br>
+				<input type="radio" name="sexo" value="h">Masculino
+				<br>
+				<input type="radio" name="sexo" value="m">Femenino
+			</p>
+			<p>
+				Descripción:
+				<br>
+				<textarea name="descripcion"></textarea>
+			</p>
+			<p>
+				<input type="submit" value="Cargar Información">
+			</p>
+		</form>
+	</body>
+</html>
