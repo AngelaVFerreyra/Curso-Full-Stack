@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Formulario Trabajo Final</title> 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body class="gray lighten-5 contenedor1">
+		<div class="section no-pad-bot" id="index-banner">
+            <br>
+            <div class="container z-depth-3 grey lighten-4 contenedor2" id="formulario">
+				<h3 id="titform">Formulario</h3>
+				<div class="row">
+					<form class="col s12 l10 offset-l1" action="formulario.php" method="post" id="form" name="form">
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">account_circle</i>
+								<input id="nombre" name="nombre" type="text" class="validate">
+								<label for="nombre">Nombre *</label>
+								<div class="error"></div>
+							</div>
+							<div class="input-field col s6">
+								<input id="apellido" name="apellido" type="text" class="validate">
+								<label for="apellido">Apellido *</label>
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">perm_identity</i>
+								<input id="dni" name="dni" type="number" class="validate"  >
+								<label for="dni">DNI *</label>
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">perm_contact_calendar</i>
+								<input id="fecha" name="fecha" type="date" class="validate">
+								<label for="fecha">Fecha de nacimiento</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">person_pin_circle</i>
+								<input id="direccion" name="direccion" type="text" class="validate">
+								<label for="direccion">Direcci&oacuten </label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">phone</i>
+								<input id="telefono" name="telefono" type="tel" class="validate">
+								<label for="telefono">Tel&eacutefono </label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate" name="email" >
+								<label for="email">Email *</label>
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s4">
+								<i class="material-icons prefix">public</i>
+								<select name="icon_pais" id="icon_pais" class="validate">
+								</select>
+								<label for="icon_pais">Pa&iacutes</label>
+							</div>
+							<div class="input-field col s4">
+								<select name="icon_provincia" id="icon_provincia" class="validate">
+								</select>
+								<label for="icon_provincia">Provincia</label>
+							</div>
+							<div class="input-field col s4">
+								<select name="icon_ciudad" id="icon_ciudad" class="validate">
+								</select>
+								<label for="icon_ciudad">Ciudad</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix " id="afoto">attach_file</i>
+								<input id="icon_afoto" type="file" class="validate">
+								<label for="icon_afoto"></label>
+							</div>
+						</div>
+						<p><input id="submit" name="submit" type="submit" value="Enviar"></p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+		<script src="./validar.js"></script>
+	</body>
+	
+</html>

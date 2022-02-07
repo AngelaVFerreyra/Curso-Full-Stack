@@ -1,0 +1,67 @@
+/* label color */
+.input-field label {
+ color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=number]:focus + label {
+ color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=number]:focus {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* valid color 
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field input[type=number].valid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color 
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid,
+.input-field input[type=number].invalid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color 
+.input-field .prefix.active {
+ color: #000;
+}*/
+
+
+
+#formulario{
+	background-color: white; 
+	border-radius: 25px;
+}
+
+#titform{
+	padding:2%;
+	text-align:center;
+}
+
+#afoto{
+	margin-top:-10px;
+}
+
+.contenedor1{
+	background-image: url(src/formulario-portada.jpg); 
+	background-size: cover;
+}
+
+.contenedor2{
+	opacity:0.95;
+}
+
+.error {
+	color: red;
+	font-size: 14.5px;
+	margin-top: 5px;
+	margin-left: 50px;
+}
